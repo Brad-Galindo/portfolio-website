@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i');
+
+body {
+    background-color: azure;
+    margin: 0;
+    font-family: 'IM Fell Great Primer';
+}
+
+article {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+div {
+    border-width: 10px;
+    
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+header {
+    height: 80px;
+}
+
+main {
+    text-align: center;
+}
+
+hr {
+    width: 550px;
+    height: 5px;
+    color: white;
+    background-color: pink;
+    border-radius: 5px;
+    border-color: black;
+}
+
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 40px;
+}
+
+h2, h3, h3 {
+    margin: auto;
+
+}
+
+div.career ul {
+    padding: auto;
+    margin-right: 40px;
+}
+
+div.hobbies ul {
+    padding: auto;
+    margin-right: 40px;
+}
+
+
+
+footer p {
+    text-align: center;
+    color: black;
+}
+
+ol {
+    margin-right: 50px;
+}
+
+a:link {color: black}
+a:visited {color:pink}
+a:hover {color: purple;}
+a:active {color: red;}
