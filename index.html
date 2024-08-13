@@ -1,114 +1,211 @@
 <!DOCTYPE html>
-<html>
-    <!-- Head section: Meta information, title, stylesheets-->
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad Galindo - Software Engineer </title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23ffffff' d='M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM256 352c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96s43 96 96 96zm0 32c-70.7 0-128-57.3-128-128s57.3-128 128-128s128 57.3 128 128s-57.3 128-128 128zm32-128c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32s32-14.3 32-32z'/></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Brad Galindo</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+
 
 </head>
-
 <body>
-
-    <!-- Header section: Contains the website header with the name "Brad Galindo" -->
+    <div id="particles-js"></div>
+    
     <header>
-        <div>
-            <h1><strong>Brad Galindo</strong></h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main section: Contains the main content of the website -->
     <main>
-        <!-- Sections container: Contains different sections of the main content -->
-        <div class="sections">
-
-            <!-- Introduction section -->
-            <section>
-
-                <h2 id="intro"><strong>An Introduction...</strong></h2>
-                <div>
-                    <article>
-
-                        <p>My name is Brad Galindo, I am an API Integration Specialist from Austin, Tx.</p>
-                        <!-- Image related to the introduction -->
-                        <img src="images/websiteimage.jpg" alt="image">
-                    </article>
+        <section id="home">
+            <div class="container" data-aos="fade-up">
+                <h1 class="glitch" data-text="Brad Galindo">Brad Galindo</h1>
+                <h2>Software Engineer</h2>
+                <p>Exploring the universe of code, one project at a time.</p>
+                <div class="btn-container">
+                    <a href="#contact" class="btn">Get in Touch</a>
+                    <a href="assets/resume.pdf" class="btn" download>Download CV</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Horizontal rule to separate sections -->
-            <hr>
+        <section id="expertise">
+            <div class="container" data-aos="fade-up">
+                <h2 class="glitch" data-text="Expertise">Expertise</h2>
+                <div class="skills-container">
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-js"></i>
+                        <span class="glitch" data-text="JavaScript">JavaScript</span>
+                        <p>Employed JavaScript extensively across full-stack development, creating dynamic client-side interactions, implementing asynchronous operations with Promises and async/await, and leveraging modern ES6+ features. Developed complex algorithms, manipulated DOM, and integrated third-party APIs to enhance web application functionality and user experience.</p>          
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fab fa-react"></i>
+                        <span class="glitch" data-text="React">React</span>
+                        <p>Harnessed React's component-based architecture to build interactive and efficient user interfaces for web applications. Implemented state management solutions like Redux, utilized hooks for functional components, and optimized performance through virtual DOM manipulation, resulting in scalable and maintainable front-end code.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="500">
+                        <i class="fab fa-node-js"></i>
+                        <span class="glitch" data-text="Node.js">Node.js</span>
+                        <p>Utilized Node.js to build scalable and high-performance server-side applications, leveraging its event-driven, non-blocking I/O model. Developed RESTful APIs, implemented real-time features, while using npm for efficient package management and dependency handling.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="600">
+                        <i class="fab fa-php"></i>
+                        <span class="glitch" data-text="PHP">PHP</span>
+                        <p>Leveraged PHP's versatility to develop robust web applications, creating dynamic content, integrating with databases, and building custom content management systems.</p>          
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="700">
+                        <i class="fas fa-database"></i>
+                        <span class="glitch" data-text="PostgreSQL">PostgreSQL</span>
+                        <p>Leveraged PostgreSQL's advanced features to build scalable databases for e-commerce platforms and data-intensive applications, optimizing query performance and ensuring data integrity.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="800">
+                        <i class="fas fa-server"></i>
+                        <span class="glitch" data-text="Database Administration">Database Administration</span>
+                        <p>Implemented robust database administration practices, including automated backups, performance tuning, and security measures, to maintain high availability and data protection for mission-critical systems across various industries.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="900">
+                        <i class="fas fa-code"></i>
+                        <span class="glitch" data-text="Knex.js">Knex.js</span>
+                        <p>Utilized Knex.js to streamline database operations in Node.js applications, implementing efficient query builders, managing complex migrations, and integrating seamlessly with various database systems for improved development workflow.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="1000">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="glitch" data-text="RESTful API">RESTful API</span>
+                        <p>Designed and implemented scalable RESTful APIs for web and mobile applications, incorporating best practices for authentication, versioning, and documentation, resulting in improved integration capabilities and developer experience.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="1100">
+                        <i class="fab fa-bootstrap"></i>
+                        <span class="glitch" data-text="Bootstrap">Bootstrap</span>
+                        <p>Employed Bootstrap to rapidly develop responsive and mobile-first web interfaces, customizing components and utilizing the grid system to create visually appealing and consistent user experiences across devices.</p>
+                    </div>
+                    <div class="skill" data-aos="zoom-in" data-aos-delay="1200">
+                        <i class="fas fa-tasks"></i>
+                        <span class="glitch" data-text="SQL Optimization">SQL Optimization</span>
+                        <p>Applied advanced SQL optimization techniques, including query rewriting, proper indexing, and execution plan, to significantly improve database performance and response times in large-scale data processing systems.</p>
+                    </div>
+            </div>
+        </section>
 
-            <!-- About Me section -->
-            <section>
-                <!-- Heading for About Me -->
-                <h2 id="about"><strong>About Me</strong></h2>
-                <div>
-                    <article>
-                        <!-- Emphasized paragraph about Brad Galindo -->
-                        <p><em>A creative software engineer passionate about turning ideas into reality through the
-                                power of coding. <br> I find joy in the diverse perspectives that come together to
-                                create something extraordinary.</em></p>
+        <section id="work"><div class="container" data-aos="fade-up">
+                <h2 class="glitch"data-text="My Projects">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project" data-aos="flip-left">
+                        <img src="images/project1-screenshot.png" alt="Project 1">
+                        <h3>Project Name</h3>
+                        <p>Project description goes here. Explain what you built and the technologies used.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="flip-left">
+                        <img src="images/project1-screenshot.png" alt="Project 1">
+                        <h3>Project Name</h3>
+                        <p>Project description goes here. Explain what you built and the technologies used.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="flip-left">
+                        <img src="images/project1-screenshot.png" alt="Project 1">
+                        <h3>Project Name</h3>
+                        <p>Project description goes here. Explain what you built and the technologies used.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <!-- Career information -->
-                        <div class="career">
-                            <h4>Career</h4>
+        <section id="experience">
+            <div class="container" data-aos="fade-up">
+                <h2 class="glitch"data-text="Work Experience">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <p>Company Name | June 2023 - August 2023</p>
                             <ul>
-                                <li>Graduated Associates Degree in Respiratory Therapy</li>
-                                <li>Software Developer in Video Game Design since 2021</li>
-                                <li>API Integration Specialist since 2021</li>
+                                <li>Developed and maintained web applications using React and Node.js</li>
+                                <li>Collaborated with senior developers to implement new features</li>
+                                <li>Participated in code reviews and agile development processes</li>
                             </ul>
                         </div>
-
-                        <!-- Hobbies information -->
-                        <div class="hobbies">
-                            <h4>Hobbies</h4>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <p>Company Name | June 2023 - August 2023</p>
                             <ul>
-                                <li>I have been an avid gamer as long as I could hold the controller</li>
-                                <li>Since 2018 I've been an pc building enthusiast.</li>
-                                <li>On a daily basis I love learning Japanese language and culture</li>
+                                <li>Developed and maintained web applications using React and Node.js</li>
+                                <li>Collaborated with senior developers to implement new features</li>
+                                <li>Participated in code reviews and agile development processes</li>
                             </ul>
                         </div>
-
-                    </article>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <p>Company Name | June 2023 - August 2023</p>
+                            <ul>
+                                <li>Developed and maintained web applications using React and Node.js</li>
+                                <li>Collaborated with senior developers to implement new features</li>
+                                <li>Participated in code reviews and agile development processes</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Horizontal rule to separate sections -->
-            <hr>
-
-            <!-- Contact Me section -->
-            <section>
-                <!-- Heading for Contact Me -->
-                <h2 id="contact"><strong>Contact Me</strong></h2>
-                <div>
-                    <article>
-                        <!-- Emphasized heading for finding Brad Galindo -->
-                        <h3><em>Find Me...</em></h3>
-                        <!-- Ordered list with contact links -->
-                        <ol class="contactSection">
-                            <li><a href="https://www.linkedin.com/in/brad-galindo/">LinkedIn</a></li>
-                            <li><a href="https://github.com/Brad-Galindo">GitHub</a></li>
-                        </ol>
-                    </article>
+        <section id="contact">
+            <div class="container" data-aos="fade-up">
+                <h2 class="glitch"data-text="Contact Me">Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>   <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/Brad-Galindo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/brad-galindo/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
-            </section>
-
-        </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Horizontal rule to separate main content and footer -->
-    <hr>
-
-    <!-- Footer section: Contains a thank you message -->
     <footer>
-        <div class="divFooter">
-            <p>Thank you for visiting. Have a great day!</p>
-        </div>
+        <p>&copy; Made with excellence</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/particles.js"></script>
 </body>
-
 </html>
