@@ -36,6 +36,7 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Glassmorphism effect for containers */
