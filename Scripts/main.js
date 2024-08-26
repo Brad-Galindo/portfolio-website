@@ -77,6 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Smooth scrolling for "Get in Touch" button
+    const getInTouchBtn = document.getElementById('get-in-touch-btn');
+    const contactSection = document.getElementById('contact');
+    getInTouchBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
     // Glitch effect for h1
     const glitchElement = document.querySelector('.glitch, .glitch-icon, .icon-wrapper');
     if (glitchElement) {
