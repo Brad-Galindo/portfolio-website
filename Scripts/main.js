@@ -120,4 +120,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setInterval(createStar, 200);
+    // PeoplePerHour Widget
+
+
+    function loadPeoplePerHourWidget() {
+        var useSSL = 'https:' == document.location.protocol;
+        var js = document.createElement('script');
+        js.src = (useSSL ? 'https:' : 'http:') + '//www.peopleperhour.com/hire/1849342053/11672145.js?width=245&height=320&orientation=vertical&theme=dark&rnd=' + parseInt(Math.random()*10000, 10);
+        document.body.appendChild(js);
+    }
+
+    // Load the PeoplePerHour widget
+    loadPeoplePerHourWidget();
+    
 });
