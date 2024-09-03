@@ -662,4 +662,14 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically on smaller screens */
+        align-items: center; /* Center align the skills */
+    }
+
+    .skill {
+        max-width: 100%; /* Allow skills to take full width on smaller screens */
+        margin-bottom: 1rem; /* Add some space between skills */
+    }
 }
